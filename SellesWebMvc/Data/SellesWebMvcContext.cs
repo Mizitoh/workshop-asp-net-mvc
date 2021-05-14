@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SellesWebMvc.Models;
+using SellesWebMvc.Models.ViewModels;
 
 namespace SellesWebMvc.Data
 {
@@ -15,5 +16,7 @@ namespace SellesWebMvc.Data
         }
 
         public DbSet<SellesWebMvc.Models.Department> Department { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecords> SalesRecords  { get; set; }
     }
 }
